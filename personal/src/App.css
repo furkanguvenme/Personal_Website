@@ -2,3 +2,15 @@
   width: 100%;
   height: 100vh;
 }
+
+.clip-top-half {
+  clip-path: inset(52.665px 0 0 0);
+}
+
+.clip-bottom-half {
+  clip-path: inset(0 0 52.665px 0);
+}
+
+.custom-shadow {
+  box-shadow: -1.66625rem -1.66625rem 0px #E92577;
+}

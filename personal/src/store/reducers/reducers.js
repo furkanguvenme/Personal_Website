@@ -2,7 +2,7 @@ import { data } from "../../data";
 import { CHANGE_MODE, ENGLISH, MOD_AL, TURKISH } from "../actions/actions";
 
 const initialState = {
-  language: "turkish",
+  language: "",
   darkMode: false,
   myData: {},
 };
@@ -10,9 +10,9 @@ const initialState = {
 export const reducer = (state = initialState, action) => {
   switch (action.type) {
     case TURKISH:
-      return { ...state, myData: data.turkish, language: "turkish" };
+      return { ...state, myData: { ...data.turkish }, language: "turkish" };
     case ENGLISH:
-      return { ...state, myData: data.english, language: "english" };
+      return { ...state, myData: { ...data.english }, language: "english" };
     case CHANGE_MODE:
       if (state.darkMode) {
         return { ...state, darkMode: false };
