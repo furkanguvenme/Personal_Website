@@ -39,12 +39,19 @@ export const data = {
       },
     ],
     profile: {
-      born: "12.03.2001",
-      city: "İstanbul",
-      education: "Marmara Üniversitesi, Makine Mühendisliği, 2023",
-      position: "Frontend, UI",
+      born: "Doğum Tarihi",
+      bornTime: "12.03.2001",
+      city: "İkamet Şehri",
+      cityx: "İstanbul",
+      education: "Eğitim Durumu",
+      educationx: "Marmara Üniversitesi, Makine Mühendisliği, 2023",
+      position: "Tercih Ettiği Rol",
+      positionx: "Frontend, UI",
+      title: "Hakkımda",
       aboutme:
-        "Marmara Üniversitesi Makine Mühendisliği bölümünden mezun oldum. Şu anda Fullstack Web Developer eğitimi alıyorum. Bu eğitim sayesinde hem ön uç (frontend) hem de arka uç (backend) teknolojileri hakkında bilgi sahibi oluyorum. Kariyerimde bir sonraki adımı atarak yazılım geliştirme alanında kendimi geliştirmeyi hedefliyorum.",
+        "Merhaba! Marmara Üniversitesi'nde Makine Mühendisliği mezunu oldum ve şu anda fullstack web developer olarak eğitim alıyorum.",
+      aboutme2:
+        "Tasarımın estetik detaylarına büyük önem veriyor, renklerin ve gölgelerin kullanıcı deneyimini nasıl etkilediğini keşfetmeye çalışıyorum. Gelecekte, yazılım geliştirme alanında derinlemesine bilgi ve deneyim kazanarak yenilikçi projelerde yer almayı hedefliyorum.",
     },
     projects: [
       {
@@ -137,12 +144,19 @@ export const data = {
       },
     ],
     profile: {
-      born: "12.03.2001",
-      city: "İstanbul",
-      education: "Marmara University, Mechanical Engineering, 2023",
-      position: "Frontend, UI",
+      born: "Date of Birth",
+      bornTime: "12.03.2001",
+      city: "City",
+      cityx: "İstanbul",
+      education: "Education",
+      educationx: "Marmara University, Mechanical Engineering, 2023",
+      position: "Preferred Role",
+      positionx: "Frontend, UI",
+      title: "About me",
       aboutme:
-        "I graduated from Marmara University with a degree in Mechanical Engineering. Currently, I am undergoing Fullstack Web Developer training, which allows me to gain knowledge in both frontend and backend technologies. My career goal is to advance in software development.",
+        "Hello! I graduated from Marmara University with a degree in Mechanical Engineering, and I'm currently undergoing training as a fullstack web developer.",
+      aboutme2:
+        "I prioritize aesthetic details and strive to understand how colors and shadows influence user experience. In the future, I aim to deepen my knowledge and experience in software development to contribute to innovative projects.",
     },
     projects: [
       {

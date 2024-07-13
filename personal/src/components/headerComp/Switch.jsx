@@ -11,7 +11,6 @@ export default function Switch() {
     setMode(!mode);
     dispatch(changeMode());
   };
-  console.log(mode);
   return (
     <>
       <label className="switch" defaultChecked>

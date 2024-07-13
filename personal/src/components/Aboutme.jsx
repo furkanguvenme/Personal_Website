@@ -9,13 +9,12 @@ export default function Aboutme() {
   if (!myData.about) {
     return <div>Loading...</div>;
   }
-
-  console.log(myData);
   return (
     <>
       <div className="w-[100%] h-[41.125rem] flex justify-center mt-[76px] ">
         <div className="flex w-[92.25rem] h-[35rem] justify-between">
           <div className="text-[56px] h-[100%] flex flex-col justify-between">
+            <div className="w-[197.33px] h-[41.33px] bg-[#E92577] absolute z-[] mt-[130px] ml-[-22px] rounded-[5.33px]"></div>
             <p
               className={
                 language == "english"
@@ -23,7 +22,6 @@ export default function Aboutme() {
                   : "w-[950px] h-[342px] mb-[160px] z-[10]"
               }
             >
-              <div className="w-[197.33px] h-[41.33px] bg-[#E92577] absolute z-[-1] mt-[130px] ml-[-22px] rounded-[5.33px]"></div>
               <span className="text-[40px]">{myData.about.paragraph1}</span>{" "}
               <br /> <span>{myData.about.paragraph2}</span>
               <br />

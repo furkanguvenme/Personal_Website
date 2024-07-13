@@ -1,24 +1,42 @@
 import { data } from "../../data";
-import { CHANGE_MODE, ENGLISH, MOD_AL, TURKISH } from "../actions/actions";
+import {
+  CHANGE_MODE,
+  DIL_AL,
+  ENGLISH,
+  MOD_AL,
+  TURKISH,
+} from "../actions/actions";
 
 const initialState = {
-  language: "",
+  language: "english",
   darkMode: false,
-  myData: {},
+  myData: data.english,
 };
 
 export const reducer = (state = initialState, action) => {
   switch (action.type) {
     case TURKISH:
-      return { ...state, myData: { ...data.turkish }, language: "turkish" };
+      localStorage.setItem("language", "turkish");
+      return {
+        ...state,
+        myData: { ...data.turkish },
+        language: "turkish",
+      };
     case ENGLISH:
-      return { ...state, myData: { ...data.english }, language: "english" };
+      localStorage.setItem("language", "english");
+      return {
+        ...state,
+        myData: { ...data.english },
+        language: "english",
+      };
     case CHANGE_MODE:
       if (state.darkMode) {
         return { ...state, darkMode: false };
       } else {
         return { ...state, darkMode: true };
       }
+    case DIL_AL:
+      return { ...state, language: action.payload };
     case MOD_AL:
       return { ...state, darkMode: action.payload };
     default:
