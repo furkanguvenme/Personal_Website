@@ -36,18 +36,25 @@ function App() {
         <Header />
         <Aboutme />
         <div className="w-[100%]">
-          <div className="w-[161.33px] h-[161.33px] bg-[#D9D9D9] rounded-full ml-[70.3vw] z-[99] absolute flex items-center justify-center bottom-0 mb-[-92.665px]">
-            <div className="w-[105.33px] h-[105.33px]">
-              <div className="w-[105.33px] h-[52.665px] bg-[#F4F4F4] rounded-t-[52.665px]"></div>
-              <div className="w-[105.33px] h-[52.665px] bg-white rounded-b-[52.665px]"></div>
-            </div>
-          </div>
+          <div className="w-[161.33px] h-[161.33px] bg-[transparent] border-[#D9D9D9] border-[28px] rounded-full ml-[70.3vw] z-[99] absolute flex items-center justify-center bottom-0 mb-[-92.665px]"></div>
         </div>
       </div>
       <Skills />
+      <div className="w-[100%] h-[65.33px] absolute">
+        <div className="w-[135px] h-[65.33px] bg-[#525252] mt-[-126.66px] rounded-r-full"></div>
+      </div>
+      <div className="w-[100%] absolute flex justify-end">
+        <img
+          src="https://i.hizliresim.com/3s2bbrs.png"
+          className="mt-[-42px]"
+        />
+      </div>
       <Profile />
       <Project />
       <Footer />
+      <div className="w-[100%] absolute">
+        <div className="w-[366.67px] h-[24px] bg-[#82BBFF] absolute bottom-[337px] left-[693px] -z-[1] rounded-[5.33px]"></div>
+      </div>
     </>
   );
 }

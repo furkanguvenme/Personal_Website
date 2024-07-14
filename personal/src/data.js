@@ -1,8 +1,7 @@
 export const data = {
   turkish: {
     about: {
-      photo:
-        "https://miauniversity.com/web/app/uploads/2022/05/Master-in-Computer-Science-cybersecurity-artificial-intelligence-and-data-science-2.jpg",
+      photo: "https://i.hizliresim.com/cb0oiov.jpeg",
       paragraph1: "Merhaba!👋",
       paragraph2:
         "Ben Furkan. Full-Stack geliştirmeciyim. Sağlam ve ölçeklenebilir frontend ürünleri oluşturabilirim.",
@@ -99,8 +98,7 @@ export const data = {
   },
   english: {
     about: {
-      photo:
-        "https://miauniversity.com/web/app/uploads/2022/05/Master-in-Computer-Science-cybersecurity-artificial-intelligence-and-data-science-2.jpg",
+      photo: "https://i.hizliresim.com/cb0oiov.jpeg",
       paragraph1: "Hi!👋",
       paragraph2:
         "I'm Furkan. I'm a full-stack developer. I can craft solid and scalable frontend products.",

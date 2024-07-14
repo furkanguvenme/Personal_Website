@@ -14,7 +14,7 @@ export default function Switch() {
   return (
     <>
       <label className="switch" defaultChecked>
-        <input type="checkbox" onChange={changeHandler} checked={mode} />
+        <input type="checkbox" onChange={changeHandler} checked={!mode} />
         <span className="slider"></span>
       </label>
     </>

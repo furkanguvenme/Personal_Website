@@ -14,3 +14,9 @@
 .custom-shadow {
   box-shadow: -1.66625rem -1.66625rem 0px #E92577;
 }
+
+.clip-right-half {
+  clip-path: inset(0 57.33px 0 0);
+}
+
+
