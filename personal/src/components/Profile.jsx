@@ -8,9 +8,15 @@ export default function Profile() {
       <div>
         <div className="w-[120px] h-[24px] bg-[#82BBFF] absolute ml-[987.33px] mt-[255.33px] rounded-[5.33px]"></div>
         <div className="w-[100%] h-[728px]  bg-[#F4F4F4] flex flex-col items-center justify-center">
-          <h1 className="text-[48px] font-medium font-[Inter] pb-0 mb-[61px]">
-            Profile
-          </h1>
+          {dil == "english" ? (
+            <h1 className="text-[48px] font-medium font-[Inter] pb-0 mb-[61px]">
+              Profile
+            </h1>
+          ) : (
+            <h1 className="text-[48px] font-medium font-[Inter] pb-0 mb-[61px]">
+              Profil
+            </h1>
+          )}
           <div className=" flex flex-row justify-center items-center gap-[87px]">
             <div className="w-[666.67px] h-[417.33px]  bg-white pl-[56px] pt-[56px] rounded-[16px]">
               <h2 className="text-[32px] font-normal font-[playfair] text-[#EA2678] mb-[32px]">

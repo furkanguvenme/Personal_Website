@@ -6,6 +6,8 @@ import { useDispatch } from "react-redux";
 import { dilAl, english, modeAl, turkish } from "./store/actions/actions";
 import Skills from "./components/Skills";
 import Profile from "./components/Profile";
+import Project from "./components/Project";
+import Footer from "./components/projectComp/footer";
 
 function App() {
   const dispatch = useDispatch();
@@ -44,6 +46,8 @@ function App() {
       </div>
       <Skills />
       <Profile />
+      <Project />
+      <Footer />
     </>
   );
 }

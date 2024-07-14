@@ -57,7 +57,7 @@ export const data = {
       {
         name: "Pizza Projesi",
         about:
-          "Bu projede, kullanıcıların kolay ve hızlı bir şekilde pizza siparişi verebilecekleri bir web sitesi geliştirdim. Site, kullanıcı dostu bir arayüze sahip olup, kullanıcıların çeşitli pizza seçeneklerini görüntüleyip seçmelerine, sepetlerini yönetmelerine ve siparişlerini tamamlamalarına olanak tanır. Proje kapsamında HTML5, CSS3 ve JavaScript kullanarak siteyi yapılandırdım ve React ile dinamik hale getirdim. Redux ile global durumu yönettim ve react-hook-form ile form işlemlerini optimize ettim. Kullanıcı kimlik doğrulama ve korumalı rotalar ile güvenli bir kullanıcı deneyimi sağladım..",
+          "Kullanıcıların pizza siparişi verebileceği, kullanıcı dostu bir arayüze sahip bir web sitesi geliştirdim. Site, HTML5, CSS3, JavaScript ve React kullanıyor. Global durumu Redux ile ve form yönetimini react-hook-form ile yönettim, güvenli kullanıcı kimlik doğrulaması ve korumalı yollar sağladım.",
         used: {
           framework1: "React",
           framework2: "Router",
@@ -69,6 +69,8 @@ export const data = {
         link: "https://github.com/furkanguvenme/Pizza_Project",
         picture:
           "https://raw.githubusercontent.com/furkanguvenme/Pizza_Project/main/Interfaces/Iteration-1/Home.png",
+        background: "#DDEEFE",
+        pcPicture: "https://i.hizliresim.com/uht999n.png",
       },
       {
         name: "Raiflix",
@@ -82,15 +84,17 @@ export const data = {
           framework5: "Styled-Components",
         },
         link: "https://github.com/furkanguvenme/Raiflix_v2",
-        picture:
-          "https://img.buzzfeed.com/buzzfeed-static/static/2023-08/31/23/asset/371692bcc9f4/sub-buzz-5587-1693525523-1.jpg",
+        picture: "https://i.hizliresim.com/lw4n3xz.png",
+        background: "#D9F6F1",
+        pcPicture: "https://i.hizliresim.com/uht999n.png",
       },
     ],
     footer: {
-      github: "https://github.com/username",
-      blog: "https://example.com/blog",
-      linkedin: "https://linkedin.com/in/username",
-      email: "mailto:email@example.com",
+      text: "Bir sonraki ürününüzde birlikte çalışalım.",
+      github: { text: "Github", link: "https://github.com/username" },
+      blog: { text: "Personal Blog", link: "https://example.com/blog" },
+      linkedin: { text: "Linkedin", link: "https://linkedin.com/in/username" },
+      email: { text: "Email", link: "mailto:email@example.com" },
     },
   },
   english: {
@@ -151,7 +155,7 @@ export const data = {
       {
         name: "Pizza Project",
         about:
-          "In this project, I developed a website where users can easily and quickly order pizza. The site features a user-friendly interface that allows users to view and select various pizza options, manage their cart, and complete their orders. I structured the site using HTML5, CSS3, and JavaScript, and made it dynamic with React. I managed global state with Redux and optimized form handling with react-hook-form. I ensured a secure user experience with user authentication and protected routes.",
+          "I developed a pizza ordering website with a user-friendly interface for selecting pizzas, managing the cart, and completing orders. The site uses HTML5, CSS3, JavaScript, and React. I handled global state with Redux and form management with react-hook-form, ensuring secure user authentication and protected routes.",
         used: {
           framework1: "React",
           framework2: "Router",
@@ -163,11 +167,13 @@ export const data = {
         link: "https://github.com/furkanguvenme/Pizza_Project",
         picture:
           "https://raw.githubusercontent.com/furkanguvenme/Pizza_Project/main/Interfaces/Iteration-1/Home.png",
+        background: "#DDEEFE",
+        pcPicture: "https://i.hizliresim.com/uht999n.png",
       },
       {
         name: "Raiflix",
         about:
-          "Raiflix, popüler streaming platformu Netflix'in arayüzünden ilham alarak geliştirilmiş bir frontend projesidir. Bu proje, kullanıcıların içerikleri keşfetmelerini ve seçtikleri içerikleri izlemelerini sağlayan basit ve kullanıcı dostu bir arayüz sunar. Raiflix'in frontend kısmı tamamen statik verilerle oluşturulmuştur, bu nedenle kullanıcı deneyimi canlı içeriklerden farklıdır.",
+          "Raiflix is a frontend project inspired by the popular streaming platform Netflix's interface. This project offers a simple and user-friendly interface that allows users to discover content and watch selected items. The frontend of Raiflix is built entirely with static data, so the user experience differs from live content.",
         used: {
           framework1: "React-Icons",
           framework2: "Bootstrap",
@@ -176,15 +182,17 @@ export const data = {
           framework5: "Styled-Components",
         },
         link: "https://github.com/furkanguvenme/Raiflix_v2",
-        picture:
-          "https://img.buzzfeed.com/buzzfeed-static/static/2023-08/31/23/asset/371692bcc9f4/sub-buzz-5587-1693525523-1.jpg",
+        picture: "https://i.hizliresim.com/lw4n3xz.png",
+        background: "#D9F6F1",
+        pcPicture: "https://i.hizliresim.com/uht999n.png",
       },
     ],
     footer: {
-      github: "https://github.com/username",
-      blog: "https://example.com/blog",
-      linkedin: "https://linkedin.com/in/username",
-      email: "mailto:email@example.com",
+      text: "Let’s work together on your next product.",
+      github: { text: "Github", link: "https://github.com/username" },
+      blog: { text: "Personal Blog", link: "https://example.com/blog" },
+      linkedin: { text: "Linkedin", link: "https://linkedin.com/in/username" },
+      email: { text: "Email", link: "mailto:email@example.com" },
     },
   },
 };
