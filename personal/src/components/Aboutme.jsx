@@ -34,18 +34,43 @@ export default function Aboutme() {
                 <FaGithub className="w-[45.33px] h-[48.19px]" />
               </div>
               <div className="text-[24px]">
-                <p>
-                  Currently <span className="text-[#AF0C48]">Freelancing</span>{" "}
-                  for{" "}
-                  <span className="text-[#AF0C48]">UX, UI, & Web Desing</span>{" "}
-                  Project .
-                </p>
-                <p>
-                  Invite me to join your team →{" "}
-                  <span className="text-[#AF0C48]">
-                    furkanguven.me@gmail.com
-                  </span>
-                </p>
+                {language == "english" ? (
+                  <>
+                    {" "}
+                    <p>
+                      Currently{" "}
+                      <span className="text-[#AF0C48]">Freelancing</span> for{" "}
+                      <span className="text-[#AF0C48]">
+                        UX, UI, & Web Desing
+                      </span>{" "}
+                      Project .
+                    </p>{" "}
+                    <p>
+                      Invite me to join your team →{" "}
+                      <span className="text-[#AF0C48]">
+                        furkanguven.me@gmail.com
+                      </span>
+                    </p>
+                  </>
+                ) : (
+                  <>
+                    <p>
+                      Şu anda{" "}
+                      <span className="text-[#AF0C48]">
+                        UX, UI, & Web Tasarım
+                      </span>{" "}
+                      projesi için{" "}
+                      <span className="text-[#AF0C48]">serbest</span>{" "}
+                      çalışıyorum.
+                    </p>{" "}
+                    <p>
+                      Beni ekibinize katılmaya davet edin →{" "}
+                      <span className="text-[#AF0C48]">
+                        furkanguven.me@gmail.com
+                      </span>
+                    </p>
+                  </>
+                )}
               </div>
             </div>
           </div>

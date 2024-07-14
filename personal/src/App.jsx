@@ -2,15 +2,13 @@ import { useEffect } from "react";
 import "./App.css";
 import Aboutme from "./components/Aboutme";
 import Header from "./components/Header";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { dilAl, english, modeAl, turkish } from "./store/actions/actions";
 import Skills from "./components/Skills";
 import Profile from "./components/Profile";
 
 function App() {
   const dispatch = useDispatch();
-  const data = useSelector((store) => store.myData);
-  const langu = useSelector((store) => store.language);
 
   useEffect(() => {
     const language = localStorage.getItem("language");

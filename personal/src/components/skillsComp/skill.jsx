@@ -3,7 +3,7 @@ export default function Skill({ item, index }) {
     <>
       <div key={index}>
         <img src={item.img} className="w-[160px] h-[160px] rounded-[8px]" />
-        <p className="text-[32px] font-medium">{item.skill}</p>
+        <p className="text-[32px] font-medium text-center">{item.skill}</p>
       </div>
     </>
   );
