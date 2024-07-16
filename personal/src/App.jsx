@@ -8,7 +8,8 @@ import Skills from "./components/Skills";
 import Profile from "./components/Profile";
 import Project from "./components/Project";
 import Footer from "./components/projectComp/footer";
-
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function App() {
   const dispatch = useDispatch();
   const data = useSelector((store) => store.myData);
@@ -32,6 +33,16 @@ function App() {
     if (dark !== null) {
       dispatch(modeAl(dark));
     }
+    toast.success("Veriler Başarıyla Yüklendi", {
+      position: "top-right",
+      autoClose: 1000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: darkMode ? "dark" : "light",
+    });
   }, [dispatch]);
 
   if (data == null) {
@@ -66,6 +77,7 @@ function App() {
       <div className="w-[100%] absolute">
         <div className="w-[366.67px] h-[24px] bg-[#82BBFF] absolute bottom-[337px] left-[693px] -z-[1] rounded-[5.33px] max-md:hidden"></div>
       </div>
+      <ToastContainer />
     </div>
   );
 }
