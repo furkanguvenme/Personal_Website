@@ -12,7 +12,7 @@ export default function Profile() {
             {title.profile}
           </h1>
           <div className=" flex flex-row justify-center items-center gap-[87px] max-md:flex-col max-md:gap-0 max-md:w-[100%]">
-            <div className="w-[666.67px] h-[417.33px]  bg-white pl-[56px] pt-[56px] rounded-[16px] max-md:scale-[0.6] max-md:mb-[-100px] dark:bg-[#525252]">
+            <div className="w-[666.67px] h-[417.33px]  bg-white pl-[56px] pt-[56px] rounded-[16px] max-md:scale-[0.5] max-md:mb-[-100px] dark:bg-[#525252]">
               <h2 className="text-[32px] font-normal font-[playfair] text-[#EA2678] mb-[32px]">
                 {profile.titles}
               </h2>
