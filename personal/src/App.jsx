@@ -40,7 +40,7 @@ function App() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="w-[100%] h-[984px] bg-[#F4F4F4] max-md:h-[85vh] dark:bg-[#2A262B]">
+      <div className="w-[100%] h-[984px] bg-[#F4F4F4] max-md:h-[85vh]  dark:bg-[#2A262B] ">
         <div className="w-[100%] ">
           <div className="w-[148px] h-[148px] bg-[#D9D9D9] rounded-full mt-[-60px] ml-[33.1vw] max-md:hidden dark:bg-[#525252]"></div>
         </div>
