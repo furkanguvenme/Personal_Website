@@ -14,20 +14,10 @@ function App() {
   const dispatch = useDispatch();
   const data = useSelector((store) => store.myData);
   const darkMode = useSelector((store) => store.darkMode);
+  const mode = JSON.parse(localStorage.getItem("mode"));
 
   useEffect(() => {
     dispatch(dilData());
-    // const language = localStorage.getItem("language");
-    // dispatch(dilAl(language));
-    // // dispatch(dilData());
-
-    // if (language === "english") {
-    //   dispatch(english());
-    //   dispatch(englishx());
-    // } else if (language === "turkish") {
-    //   dispatch(turkish());
-    //   dispatch(turkishx());
-    // }
 
     const dark = JSON.parse(localStorage.getItem("mode"));
     if (dark !== null) {
@@ -41,9 +31,9 @@ function App() {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      theme: darkMode ? "dark" : "light",
+      theme: mode ? "dark" : "light",
     });
-  }, [dispatch]);
+  }, []);
 
   if (data == null) {
     return <p>Loading...</p>;
