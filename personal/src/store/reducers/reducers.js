@@ -1,34 +1,22 @@
-import { data } from "../../data";
 import {
   CHANGE_MODE,
   DIL_AL,
-  ENGLISH,
+  ENGLISHX,
   MOD_AL,
-  TURKISH,
+  TURKISHX,
+  DIL_DATA,
 } from "../actions/actions";
 
+const initialLanguage = localStorage.getItem("language") || "english";
+
 const initialState = {
-  language: "english",
+  language: initialLanguage,
   darkMode: false,
-  myData: data.english,
+  myData: null,
 };
 
 export const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case TURKISH:
-      localStorage.setItem("language", "turkish");
-      return {
-        ...state,
-        myData: { ...data.turkish },
-        language: "turkish",
-      };
-    case ENGLISH:
-      localStorage.setItem("language", "english");
-      return {
-        ...state,
-        myData: { ...data.english },
-        language: "english",
-      };
     case CHANGE_MODE:
       if (state.darkMode) {
         return { ...state, darkMode: false };
@@ -39,6 +27,35 @@ export const reducer = (state = initialState, action) => {
       return { ...state, language: action.payload };
     case MOD_AL:
       return { ...state, darkMode: action.payload };
+    case TURKISHX:
+      localStorage.setItem("language", "turkish");
+      return {
+        ...state,
+        language: "turkish",
+        myData: action.payload[0].turkish,
+      };
+    case ENGLISHX:
+      localStorage.setItem("language", "english");
+      return {
+        ...state,
+        language: "english",
+        myData: action.payload[1].english,
+      };
+    case DIL_DATA: {
+      console.log(state.language);
+      console.log(action.payload);
+      const dil = localStorage.getItem("language") || "english";
+      return {
+        ...state,
+        myData: {
+          ...state.myData,
+          ...(dil === "english"
+            ? action.payload[1].english
+            : action.payload[0].turkish),
+        },
+      };
+    }
+
     default:
       return state;
   }
