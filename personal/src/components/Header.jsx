@@ -1,16 +1,35 @@
 import { useDispatch, useSelector } from "react-redux";
 import Switch from "./headerComp/Switch";
 import { englishx, turkishx } from "../store/actions/actions";
+import { toast } from "react-toastify";
 
 export default function Header() {
   const dispatch = useDispatch();
   const language = useSelector((state) => state.language);
   const darkMode = useSelector((state) => state.darkMode);
+  const langChange = () =>
+    toast.success(
+      language == "english"
+        ? "Dil Başarıyla Değiştirildi!"
+        : "Language Changed Successfully!",
+      {
+        position: "top-right",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      }
+    );
 
   const handleClick = () => {
     if (language === "turkish") {
+      langChange();
       dispatch(englishx());
     } else {
+      langChange();
       dispatch(turkishx());
     }
   };
