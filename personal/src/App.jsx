@@ -33,7 +33,6 @@ function App() {
       dispatch(modeAl(dark));
     }
   }, [dispatch]);
-  console.log(data);
 
   if (data == null) {
     return <p>Loading...</p>;

@@ -42,8 +42,6 @@ export const reducer = (state = initialState, action) => {
         myData: action.payload[1].english,
       };
     case DIL_DATA: {
-      console.log(state.language);
-      console.log(action.payload);
       const dil = localStorage.getItem("language") || "english";
       return {
         ...state,
