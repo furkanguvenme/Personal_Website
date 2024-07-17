@@ -26,12 +26,14 @@ export default function Proje({ item, index }) {
         <div className="w-[100%] flex flex-row justify-between">
           <a
             href={item.link}
+            target="_blank"
             className="text-[26.67px] font-semibold font-[Inter] dark:text-[#FFFFFF]"
           >
             View on Github
           </a>
           <a
             href={item.link2}
+            target="_blank"
             className="text-[26.67px] font-semibold font-[Inter] dark:text-[#FFFFFF]"
           >
             Go to app →

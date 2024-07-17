@@ -36,7 +36,17 @@ function App() {
   }, []);
 
   if (data == null) {
-    return <p>Loading...</p>;
+    return (
+      <div id="page" className="w-[100] h-[100vh] ">
+        <div id="container">
+          <div id="ring"></div>
+          <div id="ring"></div>
+          <div id="ring"></div>
+          <div id="ring"></div>
+          <div id="h3">loading</div>
+        </div>
+      </div>
+    );
   }
 
   return (
