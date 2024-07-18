@@ -4,6 +4,7 @@ export const DIL_AL = "DIL_AL";
 export const TURKISHX = "TURKISHX";
 export const ENGLISHX = "ENGLISHX";
 export const DIL_DATA = "DIL_DATA";
+export const SEND_DATA = "SEND_DATA";
 import axios from "axios";
 
 export const changeMode = () => {
@@ -40,4 +41,10 @@ export const dilData = () => (dispatch) => {
     .then((res) => {
       dispatch({ type: DIL_DATA, payload: res.data });
     });
+};
+
+export const sendPost = (obj) => (dispatch) => {
+  axios.post("https://reqres.in/api/workintech", obj).then((res) => {
+    dispatch({ type: SEND_DATA, payload: res.data });
+  });
 };

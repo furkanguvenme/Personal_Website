@@ -3,7 +3,7 @@ import "./App.css";
 import Aboutme from "./components/Aboutme";
 import Header from "./components/Header";
 import { useDispatch, useSelector } from "react-redux";
-import { dilData, modeAl } from "./store/actions/actions";
+import { dilData, modeAl, sendPost } from "./store/actions/actions";
 import Skills from "./components/Skills";
 import Profile from "./components/Profile";
 import Project from "./components/Project";

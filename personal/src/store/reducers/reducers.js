@@ -5,6 +5,7 @@ import {
   MOD_AL,
   TURKISHX,
   DIL_DATA,
+  SEND_DATA,
 } from "../actions/actions";
 
 const initialLanguage = localStorage.getItem("language") || "english";
@@ -53,7 +54,9 @@ export const reducer = (state = initialState, action) => {
         },
       };
     }
-
+    case SEND_DATA:
+      console.log(action.payload);
+      return state;
     default:
       return state;
   }

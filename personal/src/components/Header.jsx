@@ -1,12 +1,13 @@
 import { useDispatch, useSelector } from "react-redux";
 import Switch from "./headerComp/Switch";
-import { englishx, turkishx } from "../store/actions/actions";
+import { englishx, sendPost, turkishx } from "../store/actions/actions";
 import { toast } from "react-toastify";
 
 export default function Header() {
   const dispatch = useDispatch();
   const language = useSelector((state) => state.language);
   const darkMode = useSelector((state) => state.darkMode);
+  const data = useSelector((state) => state.myData);
   const langChange = () =>
     toast.success(
       language == "english"
@@ -28,9 +29,11 @@ export default function Header() {
     if (language === "turkish") {
       langChange();
       dispatch(englishx());
+      dispatch(sendPost({ ...data }));
     } else {
       langChange();
       dispatch(turkishx());
+      dispatch(sendPost({ ...data }));
     }
   };
 
